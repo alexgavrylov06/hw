@@ -8,12 +8,20 @@
 </head>
 <body>
     
+    <p><a href="../hw/authorization.html">Authorization</a></p>
+    <p><a href="../hw/sеarch.html">Search</a></p>
     <form action="https://fom.in.ua/echo" method="POST">
         <fieldset>
             <legend>Реєстрація</legend>
-            <label for="email">Email: </label>
-            <input id="email" >
+            <input name="email" type="email" placeholder="enter email" required>
+            <br>
+            <input  name="password" type="password" placeholder="enter password">
+            <br>
+            <input  name="password__confirm" type="password" placeholder="confirm passworld">
+            <br>
         </fieldset>
+
+        <button>Реєстрація</button>
     </form>
     
 </body>
