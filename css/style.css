@@ -1,1 +1,151 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'WixMadeforDisplay-Regular' ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none !important;
+
+}
+
+.py-rem {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.my-rem {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    background-color: #f3f5f6;
+    border-radius: 10px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: 50px auto;
+    justify-content: flex-end;
+}
+
+
+.text-wrap {
+    position: relative;
+    right: -25px;
+    margin-left: 130px;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+
+.title {
+    padding-bottom: 32px;
+    line-height: 38px;
+    font-size: 32px;
+    width: 320px;
+}
+
+.text1 {
+    padding-bottom: 8px;
+    font-size: 20px;
+
+}
+
+.text2 {
+    color: #3C3C43D9;
+    font-size: 14px;
+}
+
+.text-wrap .title {
+
+}
+
+.wrap1 .play-icon {
+    position: absolute;
+    z-index: 1000;
+    left: 24px;
+    bottom: 27px;
+}
+
+
+.wrap1 {
+    margin-right: 30px;
+}
+
+.wrap2 {
+    max-height: 357px;
+}
+
+.wrap2 img + img {
+    margin-left: 30px;
+}
+
+/*arrows*/
+
+.arrows-container {
+    position: absolute;
+    display: flex;
+    top: 301px;
+    left: 177px;
+}
+
+.arrows-container div {
+    width: 112px;
+    height: 112px;
+    background:#f3f4f5;
+}
+
+.arrows-container div + div {
+    margin-left: 24px;
+}
+
+.arrows-container .arrow-left > img {
+    position: relative;
+    left: 40px;
+    top: 45px;
+}
+
+.arrows-container .arrow-right > img {
+    position: relative;
+    left: 40px;
+    top: 45px;
+}
+
+/*arrows*/
+
+
+
+
+
