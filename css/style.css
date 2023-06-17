@@ -58,16 +58,21 @@ html {
     padding-bottom: 64px;
     margin: 50px auto;
     justify-content: flex-end;
+    padding-right: 24px;
 }
 
 
+/*ww*/
+
 .text-wrap {
+    display: block;
     position: relative;
-    right: -25px;
+    left: 25px;
     margin-left: 130px;
     padding-top: 60px;
     z-index: 1000;
 }
+
 
 
 .title {
@@ -76,6 +81,8 @@ html {
     font-size: 32px;
     width: 320px;
 }
+
+/*www*/
 
 .text1 {
     padding-bottom: 8px;
@@ -88,9 +95,7 @@ html {
     font-size: 14px;
 }
 
-.text-wrap .title {
 
-}
 
 .wrap1 .play-icon {
     position: absolute;
@@ -105,12 +110,15 @@ html {
 }
 
 .wrap2 {
-    max-height: 357px;
+    max-height: 600px; 
+    align-items: flex-start;
 }
 
 .wrap2 img + img {
     margin-left: 30px;
 }
+
+
 
 /*arrows*/
 
@@ -144,7 +152,6 @@ html {
 }
 
 /*arrows*/
-
 
 
 
