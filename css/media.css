@@ -2,8 +2,15 @@
     .wrap2 img + img {
         display: none;
     }
+   
     .text-wrap {
-        padding-left: 24px;
+        display: block;
+        position: relative;
+        left: 45px;
+        margin-left: 160px;
+        padding-top: 60px;
+        z-index: 1000;
+        
     }
 
     .arrows-container {
@@ -13,17 +20,46 @@
         left: 20px;
     }
 
+    .img1 {
+        width: 273px;
+    }
+
+    .wrap2 .img3 {
+        width: 208px;
+        height: 259px;
+    }
+
+    .wrap2 .img4 {
+        width: 208px;
+        height: 259px;
+    }
+
+    .arrows-container {
+            position: absolute;
+            display: flex;
+            top: 219px;
+            left: 16px;
+        }
+
+    .arrows-container div {
+        width: 80px;
+        height: 80px;
+    }
 
     .arrows-container .arrow-left > img {
         position: relative;
-        left: 40px;
-        top: 45px;
+        left: 26px;
+        top: 31px;
+    }
+
+    .arrows-container div + div {
+        margin-left: 16px;
     }
     
     .arrows-container .arrow-right > img {
         position: relative;
-        left: 40px;
-        top: 45px;
+        left: 26px;
+        top: 31px;
     }
 
     .wrapper {
@@ -34,15 +70,85 @@
 } 
 
 @media (max-width: 650px) {
-    .text-wrap {
+   .text-wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+   }
+
+   .wrap2 img + img {
+        display: initial;
+   }
+
+
+   .img-wrap {
+    flex-direction: column;
+}  
+
+
+
+
+     .text-wrap {
         position: absolute;
         left: 0;
         top:0;
     }
+
+
+    .wrap1 {
+        margin-left: 200px;
+        margin-right: 0;
+    }
+
+    .wrap2 {
+        justify-content: center;
+        align-items: center;
+        margin-left:70px;
+        margin-right: 0;
+    } 
+
+    /*
+
+    .img3 {
+        width: 100px;
+    }
+
     .wrap2 img + img {
         display: initial;
     }
     .img-wrap {
         flex-direction: column;
+         justify-content: center;
+        align-items: center;
+        margin-left:70px;
+        margin-right: 0; 
+     }
+
+
+
+    .img1 {
+        width: 343px;
+
     }
-} 
+
+    .arrows-container div + div {
+        margin-left: 10px;
+    }
+
+    .text-wrap {
+        display: block;
+        position: relative;
+        left: 25px;
+        margin-left: 130px;
+        padding-top: 60px;
+        z-index: 1000;
+        
+    }
+    
+    
+    .title {
+        padding-bottom: 32px;
+        line-height: 38px;
+        font-size: 32px;
+        width: 320px;
+    }   */
