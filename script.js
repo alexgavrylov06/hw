@@ -5,21 +5,18 @@ const todoList = document.getElementById('todoList');
 
 const field = document.getElementById('todoInput');
 
+
 document.addEventListener('click', (e) => {
+    let t = '', d = e.target;
     if (e.target.tagName === 'BUTTON' && e.target.id === 'btn') {
         let spanText = e.target.previousElementSibling.textContent;
         todosList.forEach((item, i) => {
-            if (item.text === spanText) {
-                todosList.splice(i, 1)
-            }
+        if (item.text === spanText) {
+            todosList.splice(i, 1)
+        }
             renderList()
         })
     }
-});
-
-document.addEventListener('click', (e) => {
-
-    let t = '', d = e.target;
 
     if (d.tagName === 'INPUT' && d.type === 'checkbox') {
         t = d.parentNode.id
@@ -34,7 +31,7 @@ document.addEventListener('click', (e) => {
         renderList()  
     }
 
-});
+})
 
 
 todoForm.addEventListener('submit', (e) => {
@@ -70,7 +67,7 @@ function renderList()
     todoList.innerHTML = ''
     let content = ''
     todosList.map(todo => {
-        const ul = `<li id = '${todo.id}'><input type = 'checkbox' ${todo.status ? 'checked' : ''}> <span style = 'color:${todo.color ? 'red' : 'black'};font-size:25px;font-weight: 600;'>${todo.text}</span> <button id = 'btn' type = 'submit' ${todo.disabled ? '' : 'disabled'}>Delat</button></li>`
+        const ul = `<li id='${todo.id}'><input type='checkbox' ${todo.status ? 'checked' : ''}> <span style='color:${todo.color ? 'red' : 'black'};font-size:25px;font-weight: 600;'>${todo.text}</span> <button id='btn' type='submit' ${todo.disabled ? '' : 'disabled'}>Delat</button></li>`
         content += ul;
     })
     todoList.innerHTML = content
@@ -92,9 +89,9 @@ function incorrectInputs()
 
 }
   
-
+//46:59
 function countTasks() {
-    const compTask = todosList.filter(task => {
+    todosList.filter(task => {
         task.status === true
     })
 
@@ -104,3 +101,13 @@ function countTasks() {
         message.textContent = `current amount of Tasks |${todosList.length}|`
     }
 }
+
+
+
+
+
+
+
+
+
+
