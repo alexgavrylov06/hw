@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.nav-link');
-const content = document.querySelectorAll('.tab-pane')
+const content = document.querySelectorAll('.tab-pane');
 
 function setupTabs() 
 
@@ -20,7 +20,7 @@ function setupTabs()
             
             content.forEach(tab =>  {
                 tab.classList.remove('active')
-                currentTab.classList.remove('show')
+                tab.classList.remove('show')
             })
 
             currentTab.classList.add('active')
