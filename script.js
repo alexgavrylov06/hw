@@ -28,6 +28,9 @@ continueBtn.addEventListener('click', () => {
 });
 
 let intervalid;
+let hour = 0;
+let min = 0;
+let sec = 0;
 
 function formHandler(e) {
     
@@ -53,14 +56,14 @@ function formHandler(e) {
     intervalid = setInterval(() => {
 
         
-        let hour = Math.floor(newInterval / 60 / 60)
-        let min = Math.floor(newInterval / 60) - (hour * 60)
-        let sec = newInterval % 60
+        hour = Math.floor(newInterval / 60 / 60)
+        min = Math.floor(newInterval / 60) - (hour * 60)
+        sec = newInterval % 60
 
 
-        timerRestM.textContent = min + 'm|'
-        timerRestS.textContent = sec + 's|'
-        timerRestH.textContent = hour + 'h|'
+        timerRestM.textContent = min + '.m'
+        timerRestS.textContent = sec + '.s'
+        timerRestH.textContent = hour + '.h'
         newInterval--
 
 
@@ -68,7 +71,12 @@ function formHandler(e) {
     }, 1000)
     }   
 
-    else if (typeof intervalValue === 'number' && intervalValue > 0 && isPaused) clearInterval(intervalid)
+    else if (typeof intervalValue === 'number' && intervalValue > 0 && isPaused) {
+        clearInterval(intervalid)
+        timerRestM.textContent = min + '.m';
+        timerRestH.textContent = hour + '.h';
+        timerRestS.textContent = sec + '.s';
+    }    
 }
 
 
@@ -83,21 +91,21 @@ function buildTimer(intervalValue) {
 
 
     if (intervalValue > 0) {
-        timerRestS.textContent = s + 's|'
+        timerRestS.textContent = s + '.s'
     }
 
     if (m !== 0) {
-        timerRestS.textContent = s + 's|'
-        timerRestM.textContent = m + 'm|'
+        timerRestS.textContent = s + '.s'
+        timerRestM.textContent = m + '.m'
 
         timerRestM.style.display = 'block'
     }
 
     if (h !== 0) {
 
-        timerRestS.textContent = s + 's|'
-        timerRestM.textContent = m + 'm|'
-        timerRestH.textContent = h + 'h|'
+        timerRestS.textContent = s + '.s'
+        timerRestM.textContent = m + '.m'
+        timerRestH.textContent = h + '.h'
 
         timerRestM.style.display = 'block'
         timerRestH.style.display = 'block'
@@ -106,6 +114,13 @@ function buildTimer(intervalValue) {
 
 
 }
+
+
+
+
+
+
+
 
 
 
