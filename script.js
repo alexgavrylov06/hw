@@ -5,7 +5,7 @@ const timerRestH = document.getElementById('timerRestH');
 
 const stopBtn = document.getElementById('stop');
 const continueBtn = document.getElementById('continue');
-const resetBtn = document.getElementById('reset');
+
 
 
 
@@ -19,9 +19,6 @@ stopBtn.addEventListener('click', () => {
     isPaused = true
 });
 
-resetBtn.addEventListener('click', () => {
-   
-})
 
 continueBtn.addEventListener('click', () => {
     isPaused = false
