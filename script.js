@@ -115,6 +115,3 @@ function buildTimer(intervalValue) {
 
 }
 
-
-
-
