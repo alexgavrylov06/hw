@@ -1,16 +1,15 @@
-let clr = `red`
 
-fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+fetch('https://jsonplaceholder.typicode.com/users')
   .then(r => r.json())
   .then(r => {
     document.body.insertAdjacentHTML('beforeend', `
       <div class="wrapper">${r.map(n => `
         <div class="item">
           <div id = 'avatarkaClr' class="avatarka">
-              <div style = 'background-color: ${randomClr()};' id = 'avatarka-text' class = 'avatarka-text'>${n.email[0].toUpperCase() + n.email[n.email.indexOf('@') + 1].toUpperCase()} </div>
+              <div style = 'background-color: ${randomClr()};' id = 'avatarka-text' class = 'avatarka-text'>${n.name[0].toUpperCase()+n.name.split(' ')[1][0]}</div>
           </div>
           <div  class = 'desc'>
-              <p class = 'name'>${n.email.split('@')[0] + ' ' + n.email.split('@')[1][0].toUpperCase() + n.email.split(`${n.email.split('@')[1][0]}`).pop()}</p>
+              <p class = 'name'>${n.name}</p>
               <p class = 'email'>${n.email}</p>
           </div>
         </div>`).join('')}
@@ -32,8 +31,6 @@ function randomClr()
 
 console.log(randomClr())
 
-
-// document.getElementById('avatarka-text').style.backgroundColor = `red`
 
 
 
