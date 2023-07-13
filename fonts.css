@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Bitter-Regular';
+    src: url('./fonts/Bitter-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('./fonts/Raleway-Regular.woff') format('woff');
+    font-style: normal;
+}
