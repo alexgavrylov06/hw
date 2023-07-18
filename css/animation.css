@@ -1,0 +1,48 @@
+@keyframes animCloud {
+    from {
+        transform: translateX(-100px)
+    }
+    to {
+        
+        transform: translateX(1000px)
+    }
+}
+
+@keyframes animSun {
+    0% {
+        transform: rotate(0deg) 
+              translateX(200px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+        translateX(200px) rotate(180deg);
+    }
+}
+
+@keyframes back-change {
+    from { background: rgba(238,238,238,.95) }
+      to { background: rgba(0,0,0,.95) }
+ }
+
+.cloud_3 {
+    animation: animCloud 10s infinite linear
+}
+
+.cloud_2 {
+    animation: animCloud 10s infinite 3s linear
+}
+
+.cloud_1 {
+    animation: animCloud 10s infinite 6s linear
+}
+
+.sun {
+    
+    animation: animSun 5s infinite linear;
+}
+
+
+.container {
+    animation: back-change 4s infinite linear;
+}
