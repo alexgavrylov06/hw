@@ -1,0 +1,32 @@
+@import 'colors';
+
+.nav__cont {
+  background: $grayLight;
+  width: 100vw;
+}
+
+.navigation {
+  padding-top: 79px;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  a {
+    color: $dark;
+    text-transform: uppercase;
+
+    &.activ,
+    &:hover {
+      color: $darkblue;
+    }
+  }
+}

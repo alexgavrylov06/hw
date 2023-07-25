@@ -1,0 +1,26 @@
+.projects_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects {
+  background: $darkblue;
+}
+
+.project_card {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.projects_card_text p {
+  color: $white;
+}
+
+.projects_card_text p:first-child {
+  font-size: 21px;
+}
+
+.projects_card_img {
+  margin-right: 20px;
+}

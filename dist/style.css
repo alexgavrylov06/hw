@@ -1,0 +1,177 @@
+.nav__cont {
+  background: #eeeff1;
+  width: 100vw;
+}
+
+.navigation {
+  padding-top: 79px;
+}
+.navigation ul {
+  display: flex;
+}
+.navigation li {
+  margin-right: 42px;
+}
+.navigation li:last-child {
+  margin-right: 0px;
+}
+.navigation a {
+  color: #000000;
+  text-transform: uppercase;
+}
+.navigation a.activ, .navigation a:hover {
+  color: #34547a;
+}
+
+.header__title {
+  margin-top: 151px;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.header__title-text {
+  width: 540px;
+  margin-bottom: 65px;
+}
+
+.header__title-btn {
+  width: 225px;
+  height: 65px;
+  background: #34547a;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 141px;
+}
+
+.about__title {
+  padding-top: 112px;
+  padding-bottom: 50px;
+}
+
+.about__text {
+  max-width: 540px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.projects_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects {
+  background: #34547a;
+}
+
+.project_card {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.projects_card_text p {
+  color: #ffffff;
+}
+
+.projects_card_text p:first-child {
+  font-size: 21px;
+}
+
+.projects_card_img {
+  margin-right: 20px;
+}
+
+.work-title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.work-text {
+  margin-bottom: 60px;
+  width: 540px;
+  margin: 0 auto;
+}
+
+.img_container {
+  margin-top: 57px;
+}
+
+.img_container .img_container-img_1 img {
+  width: 1000px;
+  position: relative;
+}
+
+.img_container-img_2 img {
+  position: absolute;
+  bottom: 350px;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+}
+
+.footer_text {
+  padding: 50px 0px;
+  background: #34547a;
+  color: #ffffff;
+}
+
+.footer_text-1 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.footer_text-2 {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.footer {
+  background: #34547a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif";
+}
+
+._container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text {
+  font-size: 16px;
+  color: #727272;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
