@@ -1,7 +1,13 @@
-@font-face
-    font-family: "Roboto-regular"
-    src : url("./font/Roboto-Regular.woff")
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('/font/Roboto-Medium_1.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 
-@font-face
-    font-family: "Roboto-medium"
-    src : url("./font/Roboto-Medium.woff")
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/font/Roboto-Regular_1.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
