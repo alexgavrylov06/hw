@@ -1,0 +1,27 @@
+@import url('./basic.css');
+
+.wrapper {
+  border: 1px solid;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/* .active {
+  animation: fadeIn 0.7s linear forwards;
+} */
+
+.active {
+  animation: fadeIn 0.7s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,24 @@
+.nav-group {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-group .nav-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: lightgray;
+  cursor: pointer;
+}
+.nav-group .nav-dot.active {
+  background-color: gray;
+}
+
+.slides > * {
+  display: none;
+}
+.slides .active {
+  display: block;
+  /* color: red; */
+}

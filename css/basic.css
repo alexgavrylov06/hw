@@ -1,0 +1,66 @@
+:root {
+  --main-color: #f13c6e;
+  --text-color: #333333;
+  --container-width: 1110px;
+  --basic-space: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.hidden {
+  display: none !important;
+}
+
+.py-rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.my-rem {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--basic-space) * 2);
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}

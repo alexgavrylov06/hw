@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+  :root {
+    --basic-space: 1.5rem;
+  }
+}
+@media (min-width: 2100px) {
+  :root {
+    --container-width: 1650px;
+  }
+}
