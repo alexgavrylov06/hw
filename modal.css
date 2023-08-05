@@ -1,0 +1,21 @@
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgb(200, 200, 200);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-wrapper .active {
+  display: block;
+}
+
+.modal-wrapper .modal-window {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
